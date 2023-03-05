@@ -1,1 +1,32 @@
-{}
+{
+  "name": "proshop_mern",
+  "version": "1.0.0",
+  "description": "MERN shopping cart app",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node backend/server",
+    "server": "nodemon backend/server",
+    "client": "npm start --prefix frontend",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ThakurSahab0/ProShop_MERN.git"
+  },
+  "author": "Varun Jadon",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ThakurSahab0/ProShop_MERN/issues"
+  },
+  "homepage": "https://github.com/ThakurSahab0/ProShop_MERN#readme",
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "concurrently": "^7.6.0",
+    "nodemon": "^2.0.21"
+  }
+}
